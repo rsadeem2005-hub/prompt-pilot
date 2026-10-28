@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@600;800&family=DM+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400&display=swap");
+:root{--bg:#0e2620;--ink:#f4ede3;--card:#fffaf2;--txt:#14241f;--mut:#65766f;--gold:#e2b857;--pink:#f2c9c4;--bur:#7a2342;--line:#e0d6c8;--ok:#2f7d5b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "DM Sans",system-ui,sans-serif}
+button,input,textarea{font:inherit}button{cursor:pointer}:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.app{max-width:1220px;margin:0 auto;padding:36px 5vw 40px}
+h1,h2{font-family:Syne,sans-serif}h1{font-size:clamp(44px,8vw,96px);line-height:.9;letter-spacing:-.04em;font-weight:800;margin:0;color:var(--gold)}header p{font-size:19px;color:#f4ede3c0;margin:14px 0 26px}
+.tpl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.tpl button{background:none;color:var(--ink);border:1px solid #f4ede340;border-radius:99px;padding:9px 17px}.tpl button:hover{border-color:var(--gold)}.tpl .on{background:var(--gold);color:#1a1a12;border-color:var(--gold);font-weight:600}
+.cols{display:grid;grid-template-columns:1fr 1.1fr;gap:22px;align-items:start}.side{display:flex;flex-direction:column;gap:22px}
+.panel{background:var(--card);color:var(--txt);border-radius:22px;padding:26px}.panel h2{margin:0 0 16px;font-size:24px;font-weight:600;letter-spacing:-.02em}.cols .panel,.lib{margin:0}.lib{margin-top:22px}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600;margin-bottom:18px}.fld em{font-style:normal;font-weight:400;color:var(--mut)}
+input,textarea{border:1px solid var(--line);background:#fff;color:var(--txt);border-radius:12px;padding:11px 13px;width:100%;font-weight:400;resize:vertical}
+.chips{display:flex;gap:6px;flex-wrap:wrap}.chips button{background:none;border:1px solid var(--line);border-radius:99px;padding:7px 14px;color:var(--txt)}.chips .on{background:var(--bg);color:var(--gold);border-color:var(--bg)}
+.dark{background:#071a15;color:var(--ink);border:1px solid #f4ede326}.top{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:12px}.top h2{margin:0}.top b{font-family:Syne;font-size:30px}
+pre{white-space:pre-wrap;word-break:break-word;font:14px/1.65 "IBM Plex Mono",monospace;background:#0000004d;border-radius:14px;padding:18px;margin:0 0 16px;max-height:420px;overflow:auto}
+.act{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.msg{color:var(--gold);font-size:14px}
+.btn{background:var(--gold);color:#1a1a12;border:0;border-radius:99px;padding:11px 22px;font-weight:600;white-space:nowrap}.btn:hover{background:var(--pink)}.panel .btn{background:var(--bur);color:#fff}.panel .btn:hover{background:var(--bg)}.panel .btn.ghost{background:none;color:var(--txt);border:1px solid var(--txt)}
+.lvl{font-size:13px;font-weight:600;border-radius:99px;padding:3px 12px}.lvl.s{background:var(--ok);color:#fff}.lvl.g{background:var(--gold);color:#1a1a12}.lvl.n{background:var(--pink);color:var(--bur)}
+.meter{height:12px;background:var(--pink);border-radius:99px;overflow:hidden}.meter i{display:block;height:100%;background:var(--bg);transition:width .4s}
+.chk{list-style:none;margin:16px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:8px 14px}.chk li{display:flex;gap:8px;font-size:14px}.chk .y span:first-child{color:var(--ok);font-weight:700}.chk .n{color:var(--mut)}.chk small{display:block;color:var(--mut)}
+.tip{background:var(--pink);border-radius:12px;padding:10px 14px;font-size:14px;margin:14px 0 0}
+.row{display:flex;gap:10px}.lib ul{list-style:none;margin:0;padding:0}.lib li{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-top:1px solid var(--line)}.lib small{display:block;color:var(--mut)}.lb{display:flex;align-items:center;gap:6px}
+.del{background:none;border:0;font-size:26px;color:var(--mut)}.del:hover{color:var(--bur)}.empty{color:var(--mut);border:1px dashed var(--line);border-radius:14px;padding:16px;margin:0}
+footer{margin-top:30px;color:#f4ede39a;font-size:14px}
+@media(max-width:900px){.cols{grid-template-columns:1fr}.chk{grid-template-columns:1fr}.row{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
